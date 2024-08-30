@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-14 13:42+0800\n"
+"POT-Creation-Date: 2024-06-04 07:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgstr ""
 msgid "Fingerprint verification timed out"
 msgstr ""
 
-#: ../../bin/dde-session-daemon/main.go:476
+#: ../../bin/dde-session-daemon/main.go:474
 #, c-format
 msgid "Your password will expire in %d days, please change it timely"
 msgstr ""
@@ -386,35 +386,43 @@ msgstr ""
 msgid "Resize window"
 msgstr ""
 
-#: ../../keybinding/shortcuts/id_name_map.go:114
-msgid "Move to left workspace"
+#: ../../keybinding/shortcuts/id_name_map.go:100
+msgid "Window Quick Tile Left"
 msgstr ""
 
-#: ../../keybinding/shortcuts/id_name_map.go:115
-msgid "Move to right workspace"
+#: ../../keybinding/shortcuts/id_name_map.go:101
+msgid "Window Quick Tile Right"
 msgstr ""
 
 #: ../../keybinding/shortcuts/id_name_map.go:116
-msgid "Move to upper workspace"
+msgid "Move to left workspace"
 msgstr ""
 
 #: ../../keybinding/shortcuts/id_name_map.go:117
+msgid "Move to right workspace"
+msgstr ""
+
+#: ../../keybinding/shortcuts/id_name_map.go:118
+msgid "Move to upper workspace"
+msgstr ""
+
+#: ../../keybinding/shortcuts/id_name_map.go:119
 msgid "Move to lower workspace"
 msgstr ""
 
-#: ../../keybinding/shortcuts/id_name_map.go:139
+#: ../../keybinding/shortcuts/id_name_map.go:141
 msgid "Display windows of all workspaces"
 msgstr ""
 
-#: ../../keybinding/shortcuts/id_name_map.go:140
+#: ../../keybinding/shortcuts/id_name_map.go:142
 msgid "Display windows of current workspace"
 msgstr ""
 
-#: ../../keybinding/shortcuts/id_name_map.go:141
+#: ../../keybinding/shortcuts/id_name_map.go:143
 msgid "Display workspace"
 msgstr ""
 
-#: ../../keybinding/shortcuts/id_name_map.go:202
+#: ../../keybinding/shortcuts/id_name_map.go:204
 msgid "Switch monitors"
 msgstr ""
 
@@ -422,30 +430,22 @@ msgstr ""
 msgid "Authentication is required to switch language"
 msgstr ""
 
-#: ../../langselector1/locale.go:141
+#: ../../langselector1/locale.go:139
 msgid ""
 "Changing system language and installing the required language packages, "
 "please wait..."
 msgstr ""
 
-#: ../../langselector1/locale.go:142
+#: ../../langselector1/locale.go:140
 msgid "Changing system language, please wait..."
 msgstr ""
 
-#: ../../langselector1/locale.go:143
+#: ../../langselector1/locale.go:141
 msgid "System language changed, please log out and then log in"
 msgstr ""
 
-#: ../../langselector1/locale.go:144
-msgid "System region changed, please log out and then log in"
-msgstr ""
-
-#: ../../langselector1/locale.go:412
+#: ../../langselector1/locale.go:384
 msgid "Failed to change system language, please try later"
-msgstr ""
-
-#: ../../langselector1/locale.go:749
-msgid "Failed to change locale region, please try later"
 msgstr ""
 
 #: ../../lastore1/lastore.go:427
@@ -489,11 +489,11 @@ msgid "%q failed to install."
 msgstr ""
 
 #: ../../lastore1/notify.go:104
-msgid "Removed successfully"
+msgid "%q removed successfully"
 msgstr ""
 
 #: ../../lastore1/notify.go:106
-msgid "Failed to remove the app"
+msgid "%q failed to remove"
 msgstr ""
 
 #: ../../lastore1/notify.go:113
@@ -504,6 +504,11 @@ msgstr ""
 #: ../../lastore1/notify.go:118
 msgid "Package cache wiped"
 msgstr ""
+
+#: ../../lastore1/notify.go:119 ../../lastore1/notify.go:124
+#: ../../lastore1/notify.go:132
+msgid "dde-control-center"
+msgstr "deepin Control Center"
 
 #: ../../lastore1/notify.go:123
 msgid "Updates Available"
@@ -1067,26 +1072,26 @@ msgstr ""
 msgid "Space"
 msgstr ""
 
-#: ../../timedate1/manager_ifc.go:54
+#: ../../timedate1/manager_ifc.go:58
 msgid "Authentication is required to set the system time"
 msgstr ""
 
-#: ../../timedate1/manager_ifc.go:67
+#: ../../timedate1/manager_ifc.go:71
 msgid ""
 "Authentication is required to control whether network time synchronization "
 "shall be enabled"
 msgstr ""
 
-#: ../../timedate1/manager_ifc.go:77
+#: ../../timedate1/manager_ifc.go:81
 msgid "Authentication is required to change NTP server"
 msgstr ""
 
-#: ../../timedate1/manager_ifc.go:117
+#: ../../timedate1/manager_ifc.go:121
 msgid ""
 "Authentication is required to control whether the RTC stores the local or "
 "UTC time"
 msgstr ""
 
-#: ../../timedate1/manager_ifc.go:145
+#: ../../timedate1/manager_ifc.go:147
 msgid "Authentication is required to set the system timezone"
 msgstr ""

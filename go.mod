@@ -11,16 +11,16 @@ require (
 	github.com/gosexy/gettext v0.0.0-20160830220431-74466a0a0c4a
 	github.com/jouyouyun/hardware v0.1.8
 	github.com/linuxdeepin/dde-api v0.0.0-20230407015108-8b16b3779328
-	github.com/linuxdeepin/go-dbus-factory v0.0.0-20231103081045-d546ce834d6f
+	github.com/linuxdeepin/go-dbus-factory v0.0.0-20231128020144-77ac5d6251aa
 	github.com/linuxdeepin/go-gir v0.0.0-20230331033513-a8d7a9e89f9b
-	github.com/linuxdeepin/go-lib v0.0.0-20231103081115-92734773415c
-	github.com/linuxdeepin/go-x11-client v0.0.0-20230329071904-56c906e1ab5d
+	github.com/linuxdeepin/go-lib v0.0.0-20240103033000-4fb70d4b858f
+	github.com/linuxdeepin/go-x11-client v0.0.0-20240415051504-c8e43d028ff9
 	github.com/mdlayher/netlink v1.7.1
 	github.com/msteinert/pam v1.1.0
 	github.com/rickb777/date v1.20.1
 	github.com/stretchr/testify v1.8.2
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2
-	google.golang.org/protobuf v1.30.0
+	google.golang.org/protobuf v1.33.0
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c
 	gopkg.in/yaml.v3 v3.0.1
 )
@@ -39,9 +39,9 @@ require (
 	github.com/youpy/go-riff v0.1.0 // indirect
 	github.com/youpy/go-wav v0.3.2 // indirect
 	github.com/zaf/g711 v0.0.0-20220109202201-cf0017bf0359 // indirect
-	golang.org/x/image v0.7.0 // indirect
-	golang.org/x/net v0.9.0 // indirect
+	golang.org/x/image v0.10.0 // indirect
+	golang.org/x/net v0.23.0 // indirect
 	golang.org/x/sync v0.1.0 // indirect
-	golang.org/x/sys v0.7.0 // indirect
-	golang.org/x/text v0.9.0 // indirect
+	golang.org/x/sys v0.18.0 // indirect
+	golang.org/x/text v0.14.0 // indirect
 )

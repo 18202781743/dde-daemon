@@ -37,13 +37,15 @@ import (
 	"github.com/linuxdeepin/go-lib/dbusutil"
 	. "github.com/linuxdeepin/go-lib/gettext"
 	"github.com/linuxdeepin/go-lib/log"
-	"github.com/linuxdeepin/go-lib/proxy"
 	"github.com/linuxdeepin/go-lib/utils"
 	"github.com/linuxdeepin/go-lib/xdg/basedir"
 )
 
 var logger = log.NewLogger("daemon/dde-session-daemon")
 var hasDDECookie bool
+var hasTreeLand bool
+
+var treeLandNotAllowModules = []string{"x-event-monitor", "keybinding", "trayicon", "screensaver", "inputdevices", "power"}
 
 func isInShutdown() bool {
 	bus, err := dbus.SystemBus()
@@ -155,6 +157,7 @@ func init() {
 
 	// -disable
 	flag.StringVar(&_options.disable, "disable", "", "Disable modules, ignore settings.")
+
 }
 
 func main() {
@@ -191,13 +194,18 @@ func main() {
 		_options.disableModules = strings.Split(_options.disable, ",")
 	}
 
+	if os.Getenv("DDE_CURRENT_COMPOSITOR") == "TreeLand" {
+		hasTreeLand = true
+	}
+
+	logger.Infof("env DDE_CURRENT_COMPOSITOR is %s", os.Getenv("DDE_CURRENT_COMPOSITOR"))
+
 	usr, err := user.Current()
 	if err == nil {
 		_ = os.Chdir(usr.HomeDir)
 	}
 
 	C.init()
-	proxy.SetupProxy()
 
 	app := NewSessionDaemon(logger)
 	if app == nil {
@@ -238,6 +246,8 @@ func main() {
 		err = app.enableModules(_options.enablingModules)
 	} else if len(_options.disableModules) > 0 {
 		err = app.disableModules(_options.disableModules)
+	} else if hasTreeLand {
+		err = app.disableModules(treeLandNotAllowModules)
 	} else {
 		app.execDefaultAction()
 	}
@@ -478,7 +488,7 @@ func sendLoginNotify() {
 	notify := notifications.NewNotifications(session)
 	_, err = notify.Notify(
 		0,
-		"dde-control-center",
+		Tr("dde-control-center"),
 		0,
 		icon,
 		"",

@@ -1,3 +1,123 @@
+dde-daemon (6.0.45) unstable; urgency=medium
+
+  * chore: 同步专业版方案，移除飞行模式蓝牙控制代码 (#649)
+
+ -- fuleyi <fuleyi@uniontech.com>  Wed, 28 Aug 2024 17:16:06 +0800
+
+dde-daemon (6.0.44) unstable; urgency=medium
+
+  * feat: TreeLand display service special handlle
+  * chore: 修改默认greeter壁纸 (#645)
+  * fix: unable to start under wayland
+
+ -- fuleyi <fuleyi@uniontech.com>  Tue, 27 Aug 2024 14:29:40 +0800
+
+dde-daemon (6.0.43) unstable; urgency=medium
+
+  * bump version to 6.0.43
+
+ -- zyz <zhaoyingzhen@uniontech.com>  Wed, 24 Jul 2024 13:36:08 +0800
+
+dde-daemon (6.0.42) unstable; urgency=medium
+
+  * Release to 6.0.42
+
+ -- Yingzhen zhao <zhaoyingzhen@uniontech.com>  Fri, 06 Jul 2024 17:28:26 +0800
+
+dde-daemon (6.0.41) unstable; urgency=medium
+
+  * Add translations of dde-control-center in notification titles
+
+ -- Yutao Meng <mengyutao@deepin.org>  Thu, 06 Jun 2024 13:28:25 +0800
+
+dde-daemon (6.0.40) unstable; urgency=medium
+
+  * chore(deps): bump golang.org/x/net from 0.17.0 to 0.23.0
+    fix: the dock icon of deepin-terminal quake mode is missing
+
+ -- Yutao Meng <mengyutao@deepin.org>  Tue, 04 Jun 2024 13:11:52 +0800
+
+dde-daemon (6.0.39) unstable; urgency=medium
+
+  * fix: fix a crash
+
+ -- zsien <quezhiyong@deepin.org>  Mon, 29 Apr 2024 16:16:33 +0800
+
+dde-daemon (6.0.38) unstable; urgency=medium
+
+  * feat: refactor default-file-manager
+  * fix: the dock entry of deepin-system-monitor is incorrect
+
+ -- dengbo <dengbo@deepin.org>  Tue, 23 Apr 2024 13:50:51 +0800
+
+dde-daemon (6.0.37) unstable; urgency=medium
+
+  * fix: pressing the shortcut key will hide the launchpad
+
+ -- zsien <quezhiyong@deepin.org>  Fri, 12 Apr 2024 14:14:27 +0800
+
+dde-daemon (6.0.36) unstable; urgency=medium
+
+  * chore: update translations
+  * chore: change the uninstall app notification wording
+  * chore(deps): bump google.golang.org/protobuf from 1.30.0 to 1.33.0
+  * chore: tidyup code
+  * chore: rename file to manager_tlp.go
+  * chore(power)!: remove lmt logic prepare for tlp
+
+ -- zsien <quezhiyong@deepin.org>  Fri, 22 Mar 2024 14:43:04 +0800
+
+dde-daemon (6.0.35) unstable; urgency=medium
+
+  *  fix: use sha256 generate desktop name
+
+ -- dengbo <dengbo@deepin.org>  Wed, 31 Jan 2024 15:38:35 +0800
+
+dde-daemon (6.0.34) unstable; urgency=medium
+
+  * revert fix for keybinding for linglong
+
+ -- chenhongtao <chenhongtao@deepin.org>  Fri, 26 Jan 2024 16:31:11 +0800
+
+dde-daemon (6.0.33) unstable; urgency=medium
+
+  * fix: keybinding cmd split error
+  * fix: set the default value of statusNotifierHost to true
+
+ -- dengbo <dengbo@deepin.org>  Thu, 25 Jan 2024 17:22:45 +0800
+
+dde-daemon (6.0.32) unstable; urgency=medium
+
+  * fix: nm log level error
+  * fix: toggle button do not work
+  * fix: invalid timezone during set dateTime
+
+ -- chenhongtao <chenhongtao@deepin.org>  Tue, 16 Jan 2024 14:36:52 +0800
+
+dde-daemon (6.0.31) unstable; urgency=medium
+
+  * feat: support to set anykind of grub theme
+  * fix: export prxoy env error
+  * fix: not locked after turning off the screen
+
+ -- dengbo <dengbo@deepin.org>  Fri, 05 Jan 2024 13:51:05 +0800
+
+dde-daemon (6.0.30) unstable; urgency=medium
+
+  * fix: network need to disable twice
+  * fix: fix: pstate file exist but not enable
+  * feat: betterperformancelogic
+  * feat: add window keybinding
+
+ -- dengbo <dengbo@deepin.org>  Fri, 22 Dec 2023 13:03:55 +0800
+
+dde-daemon (6.0.29) unstable; urgency=medium
+
+  * fix: wifi device not enable
+  * fix: dde-control-center timedate show empty
+
+ -- dengbo <dengbo@deepin.org>  Tue, 28 Nov 2023 10:17:15 +0800
+
 dde-daemon (6.0.28) unstable; urgency=medium
 
   * fix: delete timezone not update config file
